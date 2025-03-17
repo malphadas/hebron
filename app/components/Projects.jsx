@@ -3,7 +3,7 @@ import Repos from './Repos'
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full pt-20 px-[12%] py-10 scroll-mt-20">
+    <div id="projects" className="w-full px-[12%] py-10 scroll-mt-20">
         
         <h4 className="text-center mb-2 text-lg font-Roboto_Slab">
         What I've been up to

@@ -9,7 +9,7 @@ const About = () => {
         Introductions first
       </h4>
       <h2 className="text-center text-5xl font-Roboto">About Me</h2>
-      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div className="flex w-full flex-col lg:flex-row items-center gap-20 ">
         <div className="w-64 sm:w-80 rounded-3xl max-w-none">
           <Image
             src={assets.user_image}

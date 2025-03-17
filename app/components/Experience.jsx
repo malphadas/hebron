@@ -15,7 +15,7 @@ import { serviceData, toolsData, assets } from "@/assets/assets";
 
 const Experience = () => {
   return (
-    <div id="experience" className="w-full pb-20 px-[12%] py-10 scroll-mt-20">
+    <div id="experience" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg font-Roboto_Slab">
         Where I've been
       </h4>

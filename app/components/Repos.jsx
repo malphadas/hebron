@@ -19,8 +19,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Badge } from "@/components/ui/badge"
-
+import { Badge } from "@/components/ui/badge";
 
 const username = "malphadas";
 const maxPages = 3;
@@ -56,9 +55,13 @@ const Repos = () => {
     setRepos(repos);
   };
 
-  const filteredRepos = repos.filter((repo) =>
-    repo.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  const filteredRepos = repos.filter((repo) => {
+    const matchesName = repo.name.toLowerCase().includes(filter.toLowerCase());
+    const matchesTopic = repo.topics.some((topic) =>
+      topic.toLowerCase().includes(filter.toLowerCase())
+    );
+    return (matchesName || matchesTopic) && !(repo.fork && hideForks);
+  });
 
   return (
     <div className="flex flex-col items-center gap-4 ">
@@ -68,25 +71,21 @@ const Repos = () => {
       />
 
       {profile && (
-        <div className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-myGreen border-2 p-4">
-          <img
-            src={profile.avatar_url}
-            alt="profile image"
-            className="w-12 lg:w-20 rounded-full"
-          />
+        <div className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-myGreen border-2 p-4 hover:bg-myGreen hover:border-myGreen hover:shadow-md hover:-translate-y-0.5 duration-500">
           <a
-            href="https://github.com/malphadas" target="_blank"
-            className="px-4 sm:px-10 py-3 rounded-full flex items-center text-lg font-bold gap-5 hover:bg-myGreen hover:border-myGreen hover:-translate-y-0.5 duration-500"
+            href="https://github.com/malphadas"
+            target="_blank"
+            className="px-4 sm:px-10 py-3 rounded-full flex items-center text-xl font-bold gap-5 "
           >
-            <Image src={assets.github_icon} alt="githubicon" className="w-6" />
-            /{profile.login}
+            <Image src={assets.github_icon} alt="githubicon" className="w-6" />/
+            {profile.login}
           </a>
         </div>
       )}
-      <input
+    <input
         type="text"
         className="rounded-full border-lightGrey border-2 p-2 w-80"
-        placeholder="Filter repositories..."
+        placeholder="Filter repositories by name or topic..."
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       />
@@ -101,7 +100,10 @@ const Repos = () => {
           {filteredRepos.map(
             (repo) =>
               !(repo.fork && hideForks) && (
-                <CarouselItem key={repo.id} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem
+                  key={repo.id}
+                  className="md:basis-1/2 lg:basis-1/3"
+                >
                   <div className="p-1">
                     <Card>
                       <CardContent className="flex flex-col w-full text-center items-center justify-center  p-6">
@@ -113,23 +115,30 @@ const Repos = () => {
                         </h5>
 
                         <div className="w-full items-center">
-                          
                           <a
                             href={repo.html_url}
                             target="_blank"
                             className="text-myGreen hover:text-myGreen flex items-center justify-center gap-2"
                           >
-                            <Image src={assets.github_icon} alt="githubicon" className="w-6 aspect-square bg-grey-700 " />
+                            <Image
+                              src={assets.github_icon}
+                              alt="githubicon"
+                              className="w-6 aspect-square bg-grey-700 "
+                            />
                             {repo.full_name}
                           </a>
-                          </div>
-                        
+                        </div>
+
                         <CardFooter className="w-full flex flex-wrap justify-center py-2 gap-2">
-                        {repo.topics.map((topic) => (
-                          <Badge className="hover:bg-gray-400 bg-green-400">{topic}</Badge>
-                        ))}
+                          {repo.topics.map((topic) => (
+                            <Badge
+                              key={topic}
+                              className="hover:bg-gray-400 bg-green-400"
+                            >
+                              {topic}
+                            </Badge>
+                          ))}
                         </CardFooter>
-                        
                       </CardContent>
                     </Card>
                   </div>
