@@ -28,16 +28,16 @@ const Experience = () => {
 
       <div className="flex flex-col gap-10">
         {serviceData.map(({ company,time, title, description }, index) => (
-          <Card key={index} className="shadow-lg  hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500 dark:hover:shadow-phthaloS dark:border-gray-700 dark:bg-gray-800">
+          <Card key={index} className="shadow-md hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500  dark:bg-darkHover/10 dark:shadow dark:border-white dark:shadow-white dark:hover:bg-darkHover/50">
             <CardHeader className="flex flex-row justify-between text-center gap-3">
-            <div className="flex flex-col my-4 text-left text-gray-700 font-Roboto">
-              <CardTitle className="mb-2">{company}</CardTitle>
+            <div className="flex flex-col my-4 text-left text-gray-700 font-Roboto dark:text-white">
+              <CardTitle className="mb-2 ">{company}</CardTitle>
               <CardTitle>{title}</CardTitle>
             </div>
-              <p className="pt-4 text-gray-600 text-sm font-Roboto_Slab">{time}</p>
+              <p className="pt-4 text-gray-600 dark:text-gray-400 text-sm font-Roboto_Slab">{time}</p>
             </CardHeader>
             <CardContent> 
-              <CardDescription>{description}</CardDescription>
+              <CardDescription className='dark:text-white/80'>{description}</CardDescription>
             </CardContent>
             <CardFooter>
               <ul className="flex items-center gap-3 sm:gap-5">

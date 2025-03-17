@@ -36,8 +36,10 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import github_icon from './github-icon.png';
+import github_icon_dark from './github-icon-dark.png';
 
 export const assets = {
+    github_icon_dark,
     github_icon,
     user_image,
     code_icon,

@@ -25,7 +25,7 @@ const username = "malphadas";
 const maxPages = 3;
 const hideForks = true;
 
-const Repos = () => {
+const Repos = ({isDarkMode, setIsDarkMode}) => {
   const [profile, setProfile] = useState(null);
   const [repos, setRepos] = useState([]);
   const [filter, setFilter] = useState("");
@@ -63,6 +63,7 @@ const Repos = () => {
     return (matchesName || matchesTopic) && !(repo.fork && hideForks);
   });
 
+  
   return (
     <div className="flex flex-col items-center gap-4 ">
       <link
@@ -71,13 +72,14 @@ const Repos = () => {
       />
 
       {profile && (
-        <div className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-myGreen border-2 p-4 hover:bg-myGreen hover:border-myGreen hover:shadow-md hover:-translate-y-0.5 duration-500">
+        <div className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-myGreen border-2 p-4 hover:bg-myGreen hover:border-myGreen dark:border-white dark:bg-darkHover/50 hover:shadow-md hover:-translate-y-0.5 duration-500">
           <a
             href="https://github.com/malphadas"
             target="_blank"
             className="px-4 sm:px-10 py-3 rounded-full flex items-center text-xl font-bold gap-5 "
           >
-            <Image src={assets.github_icon} alt="githubicon" className="w-6" />/
+            <Image src={isDarkMode ? assets.github_icon_dark : assets.github_icon} alt="githubicon" className="w-10" />
+            /
             {profile.login}
           </a>
         </div>
