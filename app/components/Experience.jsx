@@ -28,7 +28,7 @@ const Experience = () => {
 
       <div className="flex flex-col gap-10">
         {serviceData.map(({ company,time, title, description }, index) => (
-          <Card key={index} className="shadow-lg hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500">
+          <Card key={index} className="shadow-lg  hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500 dark:hover:shadow-phthaloS dark:border-gray-700 dark:bg-gray-800">
             <CardHeader className="flex flex-row justify-between text-center gap-3">
             <div className="flex flex-col my-4 text-left text-gray-700 font-Roboto">
               <CardTitle className="mb-2">{company}</CardTitle>

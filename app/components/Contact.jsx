@@ -31,7 +31,7 @@ const Contact = () => {
     };
 
   return (
-    <div id="#contact" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="contact" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg font-Roboto_Slab">
         Let's Connect
       </h4>

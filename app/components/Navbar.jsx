@@ -68,7 +68,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex items-center gap-4">
-          <button>
+        <button>
             <Image
               src={assets.moon_icon}
               alt="moon icon"

@@ -16,9 +16,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${roboto.variable} ${roboto_slab.variable} antialiased leading-8 overflow-x-hidden`}
+        className={`${roboto.variable} ${roboto_slab.variable} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         {children}
       </body>
