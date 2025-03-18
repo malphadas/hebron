@@ -78,7 +78,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           </button>
 
           <a
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 hover:border-myGreen hover:bg-myGreen duration-500 dark:border-white/50"
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 hover:border-myGreen hover:bg-gentleGreen dark:hover:border-myPink duration-500 dark:hover:bg-gentlePink dark:border-white/50"
             href="#contact"
           >
             {" "}
