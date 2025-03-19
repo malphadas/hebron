@@ -9,7 +9,7 @@ const Projects = ({ isDarkMode }) => {
         <motion.h4 
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
           className="text-center mb-2 text-lg font-Roboto_Slab"
         >
           What I've been up to
@@ -18,7 +18,7 @@ const Projects = ({ isDarkMode }) => {
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
           className="text-center text-5xl font-Roboto"
         >
           Projects
@@ -27,7 +27,7 @@ const Projects = ({ isDarkMode }) => {
         <motion.p
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
           className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
         >
           Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient

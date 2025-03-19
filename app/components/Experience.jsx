@@ -19,7 +19,7 @@ const Experience = () => {
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
         className="text-center mb-2 text-lg font-Roboto_Slab"
       >
         Where I've been
@@ -27,7 +27,7 @@ const Experience = () => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
         className="text-center text-5xl font-Roboto"
       >
         Experience
@@ -36,7 +36,7 @@ const Experience = () => {
       <motion.p
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.9 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
       >
         Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
@@ -44,11 +44,11 @@ const Experience = () => {
       </motion.p>
 
       <div className="flex flex-col gap-10">
-        {serviceData.map(({ company, time, title, description }, index) => (
+        {serviceData.map(({ company, time, title, description, tech }, index) => (
           <motion.div
             initial={{ x: index % 2 === 0 ? -50 : 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
             key={index}
           >
             <Card className="shadow-md border-gray-500 hover:bg-gray-100 hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500  dark:bg-darkHover/10 dark:shadow dark:hover:shadow-myPinkS dark:border-white dark:hover:border-gentlePink dark:shadow-white dark:hover:bg-darkHover/50">
@@ -68,11 +68,11 @@ const Experience = () => {
               </CardContent>
               <CardFooter>
                 <ul className="flex items-center gap-3 sm:gap-5">
-                  {toolsData.map((tool, index) => (
+                  {tech.map((tool, index) => (
                     <motion.li
                       initial={{ y: 20, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      transition={{ duration: 0.2, delay: index * 0.05 }}
                       className="flex items-center justify-center w-12 sm:w-10 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:shadow-myLightGreyS hover:-translate-y-1 duration-500"
                       key={index}
                     >

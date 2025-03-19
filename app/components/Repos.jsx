@@ -76,7 +76,7 @@ const Repos = ({isDarkMode, setIsDarkMode}) => {
         <motion.div 
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-gray-500 border-2 p-4 hover:bg-gentleGreen hover:border-myGreen dark:border-white dark:bg-darkHover/50 hover:shadow-md hover:-translate-y-0.5 duration-500 dark:hover:bg-gentlePink dark:hover:border-myPink dark:border-white/50">
           <a
             href="https://github.com/malphadas"
@@ -92,7 +92,7 @@ const Repos = ({isDarkMode, setIsDarkMode}) => {
     <motion.input
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
         type="text"
         className="rounded-full border-lightGrey border-2 p-2 w-80 dark:border-gray-400 bg-gray-100 dark:text-black"
         placeholder="Filter repositories by name or topic..."
@@ -117,7 +117,7 @@ const Repos = ({isDarkMode, setIsDarkMode}) => {
                   <motion.div 
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    transition={{ duration: 0.2, delay: index * 0.05 }}
                     className="p-1">
                     <Card className=' dark:bg-darkHover/50 dark:border-white'>
                       <CardContent className="flex flex-col w-full text-center items-center justify-center  p-6">
@@ -148,7 +148,7 @@ const Repos = ({isDarkMode, setIsDarkMode}) => {
                             <motion.div
                               initial={{ scale: 0 }}
                               whileInView={{ scale: 1 }}
-                              transition={{ duration: 0.3, delay: topicIndex * 0.1 }}
+                              transition={{ duration: 0.2, delay: topicIndex * 0.05 }}
                               key={topic}
                             >
                               <Badge

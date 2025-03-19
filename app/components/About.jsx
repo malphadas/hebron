@@ -9,7 +9,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
       <motion.h4 
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
         className="text-center mb-2 text-lg font-Roboto_Slab"
       >
         Introductions first
@@ -17,7 +17,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
       <motion.h2 
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
         className="text-center text-5xl font-Roboto"
       >
         About Me
@@ -26,7 +26,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
         <motion.div 
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
@@ -39,7 +39,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
           <motion.p 
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="mb-10 max-w-2xl mt-5 font-Roboto_Slab"
           >
             Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
@@ -55,13 +55,13 @@ const About = ({isDarkMode, setIsDarkMode}) => {
               <motion.li
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-gentleGreen hover:border-myGreen hover:shadow-myGreenS hover:-translate-y-1  duration-500 dark:border-white dark:hover:bg-gentlePink dark:hover:border-myPink dark:hover:shadow-myPinkS dark:hover:-translate-y-1"
                 key={index}
               >
                 <Image src={isDarkMode ? iconDark : icon} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 text-gray-900 font-Roboto dark:text-white">{title}</h3>
-                <p className=" text-gray-800 text-sm font-Roboto_Slab dark:text-white/80">
+                <p className=" text-gray-800 text-sm font-Roboto_Slab dark:text-white/80 whitespace-pre-line">
                   {description}
                 </p>
               </motion.li>
@@ -70,7 +70,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
           <motion.h4 
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3 }}
             className="my-6 text-gray-700 font-Roboto_Slab dark:text-white/80"
           >
             Tools I use
@@ -80,7 +80,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
               <motion.li 
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.2, delay: index * 0.05 }}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:shadow-myLightGreyS hover:-translate-y-1 duration-500"
                 key={index}
               >

@@ -36,7 +36,7 @@ const Contact = () => {
       <motion.h4 
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
         className="text-center mb-2 text-lg font-Roboto_Slab"
       >
         Let's Connect
@@ -44,7 +44,7 @@ const Contact = () => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
         className="text-center text-5xl font-Roboto"
       >
         Contact
@@ -53,7 +53,7 @@ const Contact = () => {
       <motion.p
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.9 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
       >
         Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
@@ -63,7 +63,7 @@ const Contact = () => {
       <motion.form 
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.4 }}
         onSubmit={onSubmit} 
         className='max-w-2xl mx-auto'
       >
@@ -71,7 +71,7 @@ const Contact = () => {
         <motion.input 
           initial={{ x: -30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
           type="text" 
           placeholder='Enter your name' 
           required 
@@ -81,7 +81,7 @@ const Contact = () => {
         <motion.input 
           initial={{ x: 30, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
           type="text" 
           placeholder='Enter your email' 
           required 
@@ -92,7 +92,7 @@ const Contact = () => {
         <motion.textarea 
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
           rows='6' 
           placeholder='Enter your message' 
           required 
@@ -102,7 +102,7 @@ const Contact = () => {
         <motion.button 
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.9 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
           type='submit' 
           className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
         >
@@ -112,7 +112,7 @@ const Contact = () => {
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.2 }}
           className='mt-4'
         >
           {result}
