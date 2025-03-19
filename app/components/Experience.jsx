@@ -39,8 +39,7 @@ const Experience = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
       >
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
-        dignissim egestas nisl sollicitudin sem. Habitant lectus congue.
+        Here's a glimpse of my professional experience, the technologies I've worked with, and the projects I've contributed to.
       </motion.p>
 
       <div className="flex flex-col gap-10">

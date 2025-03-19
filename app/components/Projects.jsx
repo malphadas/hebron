@@ -30,8 +30,7 @@ const Projects = ({ isDarkMode }) => {
           transition={{ duration: 0.3, delay: 0.3 }}
           className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
         >
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
-          dignissim egestas nisl sollicitudin sem. Habitant lectus congue.
+          Here's a showcase of my personal projects. These projects reflect my passion for exploring different technologies and solving interesting problems.
         </motion.p>
         
         <Repos isDarkMode={isDarkMode} />

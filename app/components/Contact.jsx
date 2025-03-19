@@ -56,8 +56,7 @@ const Contact = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
       >
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Cras parturient
-        dignissim egestas nisl sollicitudin sem. Habitant lectus congue.
+        I'm always looking for new opportunities to collaborate and contribute to exciting projects. If you have any questions or would like to discuss a potential collaboration, please don't hesitate to reach out.
       </motion.p>
 
       <motion.form 

@@ -14,10 +14,7 @@ import {
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 
 import { Badge } from "@/components/ui/badge";
@@ -26,7 +23,7 @@ const username = "malphadas";
 const maxPages = 3;
 const hideForks = true;
 
-const Repos = ({isDarkMode, setIsDarkMode}) => {
+const Repos = ({isDarkMode}) => {
   const [profile, setProfile] = useState(null);
   const [repos, setRepos] = useState([]);
   const [filter, setFilter] = useState("");
@@ -79,7 +76,7 @@ const Repos = ({isDarkMode, setIsDarkMode}) => {
           transition={{ duration: 0.3 }}
           className="flex flex-row max-w-lg gap-4 elevation-4 shadow-lg items-center mt-4 rounded-full border-gray-500 border-2 p-4 hover:bg-gentleGreen hover:border-myGreen dark:border-white dark:bg-darkHover/50 hover:shadow-md hover:-translate-y-0.5 duration-500 dark:hover:bg-gentlePink dark:hover:border-myPink dark:border-white/50">
           <a
-            href="https://github.com/malphadas"
+            href={`https://github.com/${username}`}
             target="_blank"
             className="px-4 sm:px-10 py-3 rounded-full flex items-center text-xl font-bold gap-5 "
           >
