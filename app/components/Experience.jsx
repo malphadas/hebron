@@ -66,7 +66,7 @@ const Experience = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <ul className="flex items-center gap-3 sm:gap-5">
+                <ul className="flex items-center gap-3 sm:gap-5 flex-wrap">
                   {tech.map((tool, index) => (
                     <motion.li
                       initial={{ y: 20, opacity: 0 }}

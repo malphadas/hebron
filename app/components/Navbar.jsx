@@ -34,7 +34,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <Image
             src={isDarkMode ? assets.logo_dark :assets.logo}
             alt="logo"
-            className="w-38 cursor-pointer mr-14"
+            className="w-36 cursor-pointer mr-14"
           />
         </a>
         <ul
@@ -45,21 +45,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <li>
             <a className="font-Roboto_Slab" href="#home">
               Home
-            </a>
-          </li>
-          <li>
-            <a className="font-Roboto_Slab" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="font-Roboto_Slab" href="#experience">
-              Experience
-            </a>
-          </li>
-          <li>
-            <a className="font-Roboto_Slab" href="#projects">
-              Projects
             </a>
           </li>
           <li>
@@ -111,29 +96,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <li>
             <a onClick={closeMenu} className="font-Roboto_Slab" href="#home">
               Home
-            </a>
-          </li>
-          <li>
-            <a onClick={closeMenu} className="font-Roboto_Slab" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={closeMenu}
-              className="font-Roboto_Slab"
-              href="#experience"
-            >
-              Experience
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={closeMenu}
-              className="font-Roboto_Slab"
-              href="#projects"
-            >
-              Projects
             </a>
           </li>
           <li>

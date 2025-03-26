@@ -10,8 +10,8 @@ const roboto_slab = Roboto_Slab({
 });
 
 export const metadata = {
-  title: "Portifolio Website",
-  description: "Matheus's portifolio website",
+  title: "Hebon Holdings",
+  description: "Hebon Holdings",
 };
 
 export default function RootLayout({ children }) {

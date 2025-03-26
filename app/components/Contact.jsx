@@ -13,7 +13,7 @@ const Contact = () => {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "b55f8e5e-b6b5-4a14-83c1-8d403e74c011");
+      formData.append("access_key", "ACCESS_KEY");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -56,7 +56,7 @@ const Contact = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Roboto_Slab"
       >
-        I'm always looking for new opportunities to collaborate and contribute to exciting projects. If you have any questions or would like to discuss a potential collaboration, please don't hesitate to reach out.
+        We specialize in global commodities trading and sustainable energy solutions. Whether you're interested in our trading services, energy projects, or would like to explore potential business opportunities, our team is ready to assist you. Please reach out to discuss how we can meet your needs.
       </motion.p>
 
       <motion.form 
